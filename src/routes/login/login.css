@@ -1,0 +1,106 @@
+.loginContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  form {
+    padding: 5vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vmin;
+    font-weight: 400;
+    min-height: 50vh;
+    min-width: 65vw;
+  }
+  
+  .loginElements {
+    display: flex;
+    flex-direction: column;
+    gap: 3vmin;
+  }
+  
+  /* INSIDE FORM */
+  
+  h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60vw;
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 3vh;
+  }
+  
+  .registerIntro {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 2vh;
+  }
+  
+  #email {
+    text-transform: lowercase;
+  }
+  
+  .linkToRegister {
+    font-size: 1rem;
+    color: #3C6E71;
+    margin-left: 1vmin;
+    font-weight: 600;
+  }
+  
+  /* BUTTON */
+  
+  button {
+    cursor: pointer;
+    height: 5vmin;
+    width: 10vmin;
+    border: none;
+    border-radius: 5px;
+    background-color: #3C6E71;
+    color: white;
+    transition: all ease-in-out 0.1s;
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-top: 3vh;
+  
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .loginElements {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 3vmin;
+    }
+  }
+  
+  @media screen and (max-width: 620px) {
+  
+    form {
+      & .form-element {
+        display: flex;
+        flex-direction: column;
+        width: 60vw;
+        text-align: center;
+        & input {
+          height: 5vh;
+        }
+      }
+  
+      & button {
+        height: 10vmin;
+        width: 20vmin;
+        font-size: 0.9rem;
+      }
+    }
+  }
+  

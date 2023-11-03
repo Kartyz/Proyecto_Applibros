@@ -1,0 +1,135 @@
+.faqContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3vh;
+    min-height: 100vh;
+    text-align: left;
+    padding: 17vh 5vw 10vh 5vw;
+  }
+  
+  .question {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3vh;
+    justify-content: space-between;
+  }
+  
+  .questionContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    width: 50vw;
+    padding: 1vh 2vw;
+    border-radius: 20px;
+    background-color: #3C6E71;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  
+  .answer {
+    width: 65vw;
+    font-size: 1.2rem;
+    font-weight: 300;
+    opacity: 0;
+    max-height: 0vh;
+    overflow: hidden;
+    text-align: justify;
+    transition: opacity 0.3s ease-in-out, max-height 0.5s ease-in-out;
+  }
+  
+  .visible {
+    opacity: 1;
+    max-height: 65vh;
+  }
+  
+  .faqLink {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #3C6E71;
+  }
+  
+  .developersProfile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 35vmin;
+    gap: 5vw;
+  
+    & i{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 100%;
+      font-size: 100px;
+      min-height: 25vmin;
+      min-width: 25vmin;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+  }
+  
+  .developerCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 20vmin;
+    min-width: 15vmin;
+    gap: 2vmin;
+    margin-top: 3vmin;
+  
+    & h1 {
+      height: fit-content;
+      width: fit-content;
+    }
+  }
+  
+  .Miguel {
+    height: 25vmin;
+    width: 25vmin;
+    border: 3px solid #3C6E71;
+    border-radius: 100%;
+    background-image: url(../../resources/profiles/Miguel.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  
+  .Keyla {
+    height: 25vmin;
+    width: 25vmin;
+    border: 3px solid #344849;
+    border-radius: 100%;
+    background-image: url(../../resources/profiles/keyla.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  
+  .Oriol {
+    height: 25vmin;
+    width: 25vmin;
+    border-radius: 100%;
+    border: 3px solid #3C6E71;
+    background-image: url(../../resources/profiles/Oriol.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .questionContainer {
+      width: 90vw;
+    }
+    .answer {
+      width: 90vw;
+    }
+  }
+  
+  
