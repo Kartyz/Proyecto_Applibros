@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./faq.css";
 import { Link } from "react-router-dom";
+import Footer from "../../components/footer/footer";
 
 function Faq() {
   const [openQuestion, setOpenQuestion] = useState(null);
@@ -17,15 +18,10 @@ function Faq() {
               : setOpenQuestion("q1")
           }
         >
-          ¿Cómo puedo ganar puntos?<i className="fa-solid fa-caret-down"></i>
+          ¿Cómo puedo publicar un libro?<i className="fa-solid fa-caret-down"></i>
         </h2>
         <p className={openQuestion === "q1" ? "answer visible" : "answer"}>
-          Para ganar puntos, es esencial visitar uno de nuestros locales
-          sección{" "}
-          <Link className="faqLink" to={"/map"}>
-            Mapa
-          </Link>
-          .
+          Para publicar un libro tienes que ir a la seccion agregar libro (+) donde te pediremos la información básica.
         </p>
       </div>
       <div className="question">
@@ -41,14 +37,8 @@ function Faq() {
           <i className="fa-solid fa-caret-down"></i>
         </h2>
         <p className={openQuestion === "q2" ? "answer visible" : "answer"}>
-          Para canjear tus puntos, visita tu{" "}
-          <Link className="faqLink" to={"/profile"}>
-            Perfil
-          </Link>{" "}
-          y pulsa el botón "Canjear mis puntos", después selecciona el descuento
-          y comercio de tu elección. Puedes efectuar el canje tanto en la página
-          web del comercio seleccionado como directamente en el local físico.
-          ¡Aprovecha tus descuentos!
+          Después de hacer el intercambio si te ha gustado el libro y quieres
+          comprarlo tendrás la opción de hacerlo, siempre y cuando el dueño del libro este interesado!
         </p>
       </div>
       <div className="question">
@@ -60,20 +50,19 @@ function Faq() {
               : setOpenQuestion("q3")
           }
         >
-          ¿En qué comercios puedo hacerlo?
+          ¿En qué comercios puedo hacer los intercambios?
           <i className="fa-solid fa-caret-down"></i>
         </h2>
         <p className={openQuestion === "q3" ? "answer visible" : "answer"}>
-          Puedes canjear tus puntos en los comercios destacados en la sección{" "}
+          Tenemos diferentes comercios dispuestos a que vengas a dejar los libros que vas a intercambiar aqui tienes el {" "}
           <Link className="faqLink" to={"/map"}>
             Mapa
           </Link>{" "}
-          de nuestra página web. Algunos de los comercios
+          de nuestra app. Algunos de los comercios
           participantes son: Humana, Supermercados Dia, Cafetería la Esquina,
           Tea Shop, Alcampo, Kiabi y Bershka, entre otros. Te invitamos a
           explorar esta sección para conocer todos los establecimientos
-          asociados y disfrutar de descuentos exclusivos en una diversidad de
-          productos y servicios.
+          asociados.
         </p>
       </div>
       <div className="question">
@@ -85,15 +74,11 @@ function Faq() {
               : setOpenQuestion("q4")
           }
         >
-          ¿Caducan mis puntos?<i className="fa-solid fa-caret-down"></i>
+          ¿Caducan las publicaciones de mis libros?<i className="fa-solid fa-caret-down"></i>
         </h2>
         <p className={openQuestion === "q4" ? "answer visible" : "answer"}>
-          Los puntos que acumules no caducan por inactividad, así que no hay
-          problema si no has ingresado a la página web en un tiempo. Sin
-          embargo, es vital tener presente que, aunque tus puntos no expiren,
-          los descuentos o beneficios que obtengas de los comercios pueden tener
-          una fecha de caducidad específica. Te recomendamos revisar los
-          términos de cada oferta para asegurarte de aprovecharlas a tiempo.
+          Tus publicaciones no se eliminaran a menos que un usuario te haya pedido un intercambio
+          y no respondas a la petición, en este caso se te notificara de lo sucedido y estarás en 
         </p>
       </div>
       <div className="question">
@@ -108,16 +93,8 @@ function Faq() {
           ¿Para que sirve el sistema de clasificación?          <i className="fa-solid fa-caret-down"></i>
         </h2>
         <p className={openQuestion === "q5" ? "answer visible" : "answer"}>
-          El porcentaje de descuento que puedes obtener varía según la decisión
-          de cada comercio, oscilando generalmente entre un 5% y un 20%. Es
-          esencial tener en cuenta que este porcentaje puede cambiar dependiendo
-          del local y las promociones que cada uno ofrezca en un momento
-          determinado. Te recomendamos consultar directamente en los comercios o
-          en nuestra sección de{" "}
-          <Link className="faqLink" to={"/map"}>
-            Mapa
-          </Link>{" "}
-          para estar al tanto de las ofertas actuales.
+          Con este sistema lo que pretendemos es premiar a aquellas personas
+          que hacen un buen uso de la app mejorando su posicionamiento en la misma.
         </p>
       </div>
       <div className="question">
@@ -138,9 +115,10 @@ function Faq() {
               <h1>Oriol</h1>
             </div>
           </div>
-          
+          Estudiante de programación que tenía que hacer un proyecto para clase.
         </p>
       </div>
+      <Footer />
     </div>
   );
 }

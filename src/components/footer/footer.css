@@ -1,14 +1,14 @@
-.footer {
+  .footer {
     background-color: #e2e1d4;
     width: 100vw;
     height: 10vh;
-    display: absolute;
-    align-items: center;
-    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     padding: 0 7vmin;
-    color: #48483e;
-  }
-  
+}
+
   .links {
     display: flex;
     align-items: center;

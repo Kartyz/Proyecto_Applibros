@@ -1,5 +1,5 @@
 import "./contact.css";
-
+import Footer from "../../components/footer/footer";
 function Contact() {
   return (
     <div className="contactContainer">
@@ -8,7 +8,7 @@ function Contact() {
         method="POST"
       >
         <h1 className="intro">
-          Si necesitas información que no está disponible en nuestro sitio web,
+          Si necesitas información que no está disponible en nuestra app,
           estamos aquí para ayudarte.
         </h1>
         <h2>Datos de contacto</h2>
@@ -46,6 +46,7 @@ function Contact() {
         </div>
         <button type="submit">Enviar</button>
       </form>
+      <Footer />
     </div>
   );
 }

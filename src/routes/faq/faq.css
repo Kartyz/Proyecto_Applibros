@@ -85,38 +85,13 @@
       height: fit-content;
       width: fit-content;
     }
-  }
-  
-  .Miguel {
-    height: 25vmin;
-    width: 25vmin;
-    border: 3px solid #3C6E71;
-    border-radius: 100%;
-    background-image: url(../../resources/profiles/Miguel.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  }
-  
-  .Keyla {
-    height: 25vmin;
-    width: 25vmin;
-    border: 3px solid #344849;
-    border-radius: 100%;
-    background-image: url(../../resources/profiles/keyla.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  }
-  
+  }  
   .Oriol {
     height: 25vmin;
     width: 25vmin;
     border-radius: 100%;
     border: 3px solid #3C6E71;
-    background-image: url(../../resources/profiles/Oriol.jpeg);
+    background-image: url(../../resources/profile/Oriol.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

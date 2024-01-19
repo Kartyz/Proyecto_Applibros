@@ -3,7 +3,7 @@ import "./register.css";
 import { useNavigate } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-
+import Footer from "../../components/footer/footer";
 function Register() {
   const [formData, setFormData] = useState({
     nickname: "",
@@ -65,7 +65,7 @@ function Register() {
         pauseOnHover
       />
       <form onSubmit={handleSubmit}>
-        <h1 className="intro">Registrate ahora y empieza a intercambiar puntos!</h1>
+        <h1 className="intro">Registrate ahora y empieza a intercambiar libros!</h1>
         <h2 className="registerIntro">Introduce tus datos</h2>
         <div className="registerElements">
           <div className="form-element name">
@@ -126,6 +126,7 @@ function Register() {
           Enviar
         </button>
       </form>
+      <Footer />
     </div>
   );
 }

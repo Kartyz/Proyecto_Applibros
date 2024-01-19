@@ -1,13 +1,20 @@
 import "./App.css";
 import Footer from "./components/footer/footer";
-import Modal from "./components/popup/modal";
+
+import Main from "./main";
+
 
 
 function App() {
 return(
 <div className="container">
+  
+  <Main />
+  
   <Footer />
-  <Modal />
+  
+  
+  
 </div>
 );
  
