@@ -1,0 +1,115 @@
+
+.profileCard {
+  display: flex;
+  justify-content: center;
+  padding-top: 10vh;
+
+  & i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*font-size: 10rem; este estilo hace que el footer sea enorme, pero tambien el logo de perfil*/
+  }
+
+  & .profilePictureContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35vmin;
+    width: 35vmin;
+    border: 5px solid #3C6E71;
+    border-radius: 100%;
+    background-color: #D1D3C4;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: pointer;
+  }
+}
+
+.data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 2vh;
+  margin-bottom: 3vh;
+  margin-top: 3vh;
+  min-height: 0vh;
+  font-size: 1.2rem;
+  font-weight: 300;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.3s ease-in-out, max-height 0.5s ease-in-out;
+}
+
+.visible {
+  opacity: 1;
+  max-height: 50vh;
+}
+
+.nickname {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 200;
+}
+
+.emailProfile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.id {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 300;
+}
+.progress {
+  height: 5vmin;
+  width: 35vmin;
+  border: 3px solid #3C6E71;
+  border-radius: 10px;
+}
+
+/*progress[value] {-webkit-appearance: none;}
+progress[value]::-webkit-progress-value {color: white;}
+progress[value]::-webkit-progress-value {
+  background-color: #3C6E71;
+  border-radius: 6px;
+}*/
+progress::-webkit-progress-bar {
+  background-color: #ffffff; width: 100%;
+  border-radius: 7px;
+}
+
+span {
+  color: #3C6E71;
+  font-size: 1rem;
+  font-weight: 600;
+}
+  
+/*@media screen and (max-width: 620px) {
+.profileCard {
+  & i {
+    font-size: 20vmin;
+  }
+  & .canjearPuntos {
+    height: 5vh;
+    width: 35vw;
+  }
+}
+.popupContent button {
+  position: absolute;
+  top: -40px;
+  right: -50px;
+  min-width: fit-content;
+  min-height: fit-content;
+}
+
+}*/

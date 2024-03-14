@@ -1,0 +1,140 @@
+[
+    {
+      "id": 1,
+      "name": "On The Road",
+      "author": "Jack Kerouac",
+      "price": 10,
+      "img": "https://imgs.search.brave.com/PG6VRGVRdd1tat50p4zbkf4eZejQVmLSXnyikv6sZfQ/rs:fit:346:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5z/eGVESlRoNnNFWDZk/VXhhcjJnTkNnSGFL/SiZwaWQ9QXBp",
+      "quanty": 1,
+      "description": "La obra maestra de Jack Kerouac que captura el espíritu de la generación beat durante sus viajes por Estados Unidos."
+    },
+    {
+      "id": 2,
+      "name": "The Subterraneans",
+      "author": "Jack Kerouac",
+      "price": 20,
+      "img": "https://m.media-amazon.com/images/M/MV5BMzVmZmE1MzItYWNhMy00MzJjLWFjYzgtYzMzMDI2ZGIyZmY3XkEyXkFqcGdeQXVyNTY4NjI2OTA@._V1_.jpg",
+      "quanty": 1,
+      "description": "Una exploración poética de la contracultura y las relaciones humanas, escrita con el estilo distintivo de Jack Kerouac."
+    },
+    {
+      "id": 3,
+      "name": "Indian Journals",
+      "author": "Allen Ginsberg",
+      "price": 27,
+      "img": "https://m.media-amazon.com/images/I/51hPd6R4BHL._SY445_SX342_.jpg",
+      "quanty": 1,
+      "description": "Las observaciones y reflexiones fascinantes de Allen Ginsberg durante su viaje a la India, lleno de experiencias espirituales y culturales."
+    },
+    {
+      "id": 4,
+      "name": "Iron Horse",
+      "author": "Allen Ginsberg",
+      "price": 18,
+      "img": "https://m.media-amazon.com/images/I/41k8OcJronL.jpg",
+      "quanty": 1,
+      "description": "Una colección de poemas ferroviarios intensos y reflexivos que exploran la conexión entre la industria y la esencia humana."
+    },
+    {
+        "id": 5,
+        "name": "Codigo Limpio",
+        "author": "Robert C Martin",
+        "price": 29.99,
+        "img": "https://m.media-amazon.com/images/I/413qAnZ6sTL._SX342_SY445_.jpg",
+        "quanty": 1,
+        "description": "Un manual clásico que presenta principios y prácticas para escribir código limpio y mantenible en el desarrollo de software."
+    },
+    {
+        "id": 6,
+        "name": "Cien años de soledad",
+        "author": "Gabriel García Márquez",
+        "price": 19.99,
+        "img": "https://m.media-amazon.com/images/I/51ptehuTIOL._SY445_SX342_.jpg",
+        "quanty": 1,
+        "description": "Una obra maestra de realismo mágico que narra la historia épica de la familia Buendía en el pueblo de Macondo."
+    },
+    {
+        "id": 7,
+        "name": "1984",
+        "author": "George Orwell",
+        "price": 24.99,
+        "img": "https://m.media-amazon.com/images/I/51-XRKboGbL._SY445_SX342_.jpg",
+        "quanty": 1,
+        "description": "Una distopía clásica que presenta un mundo totalitario gobernado por el Partido, explorando la supresión de la privacidad y libertad individual."
+    },
+    {
+        "id": 8,
+        "name": "Señor de los anillos",
+        "author": "J.R.R Tolkien",
+        "price": 39.99,
+        "img": "https://m.media-amazon.com/images/I/51l0Fw89NBL._SY445_SX342_.jpg",
+        "quanty": 1,
+        "description": "Una trilogía épica que sigue las aventuras de Frodo Bolsón mientras intenta destruir el Anillo Único y enfrenta el malvado Sauron."
+    },
+    {
+        "id": 9,
+        "name": "Orgullo y prejuicio",
+        "author": "Jane Austen",
+        "price": 14.99,
+        "img": "https://m.media-amazon.com/images/I/517B0QZEF2L._SY445_SX342_.jpg",
+        "quanty": 1,
+        "description": "Una novela clásica de la literatura inglesa que explora las complejidades de las relaciones sociales y amorosas en el siglo XIX."
+    },
+    {
+        "id": 10,
+        "name": "Crimen y Castigo",
+        "author": "Fyodor Dostoyevsky",
+        "price": 34.99,
+        "img": "https://m.media-amazon.com/images/I/519h5okLOsS._SY445_SX342_.jpg",
+        "quanty": 1,
+        "description": "Dostoyevsky examina la psique humana a través de la historia de Rodion Raskólnikov, un estudiante que enfrenta las consecuencias morales de sus acciones."
+    },
+    {
+        "id": 11,
+        "name": "Ensayo sobre la ceguera",
+        "author": "Jose Saramago",
+        "price": 27.99,
+        "img": "https://m.media-amazon.com/images/I/41e+fo0nnHL._SY445_SX342_.jpg",
+        "quanty": 1,
+        "description": "Una narrativa distópica que explora la descomposición moral y social después de una epidemia inexplicable de ceguera."
+    },
+    {
+        "id": 12,
+        "name": "Matar a un ruiseñor",
+        "author": "Harper Lee",
+        "price": 22.99,
+        "img": "https://m.media-amazon.com/images/I/51Gup0mfMnL._SY445_SX342_.jpg",
+        "quanty": 1,
+        "description": "A través de los ojos de la joven Scout Finch, la novela aborda temas de raza y justicia en el sur de Estados Unidos durante la Gran Depresión."
+    },
+    {
+        "id": 13,
+        "name": "Los hombres que no amaban a las mujeres",
+        "author": "Stieg Larsson",
+        "price": 31.99,
+        "img": "https://m.media-amazon.com/images/I/41wLECA86VL._SY445_SX342_.jpg",
+        "quanty": 1,
+        "description": "El periodista Mikael Blomkvist y la hacker Lisbeth Salander se unen para resolver un misterio familiar que se convierte en una trama de corrupción y secretos oscuros."
+    },
+    {
+        "id": 14,
+        "name": "El cuento de la criada",
+        "author": "Margaret Atwood",
+        "price": 26.99,
+        "img": "https://m.media-amazon.com/images/I/41oFHTPnXzL._SY445_SX342_.jpg",
+        "quanty": 1,
+        "description": "Situada en una sociedad distópica totalitaria, la novela aborda temas de opresión, feminismo y control social."
+    },
+    {
+        "id": 15,
+        "name": "El retrato de Dorian Grey",
+        "author": "Oscar Wilde",
+        "price": 18.99,
+        "img": "https://m.media-amazon.com/images/I/51WpJN+6P9L._SY445_SX342_.jpg",
+        "quanty": 1,
+        "description": "Oscar Wilde explora la decadencia moral a través de la historia de Dorian Gray, donde la apariencia física permanece inalterada mientras su retrato envejece."
+    }
+]
+
+
+

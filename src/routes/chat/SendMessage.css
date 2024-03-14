@@ -1,0 +1,72 @@
+/* Send Message Component */
+.BarraMensaje {/*quiero trastear las cosas del form para los botones*/
+    flex-direction: row;
+    min-height: 0;
+    padding:0;
+    gap:0;
+  }
+  input[type="text"] {
+    border: solid 1px #d4d3d3;
+    padding: 14px 55px;
+    font-size: inherit;
+    border-radius: 6px;
+    outline: none;
+  }
+  .message-input{
+    position: relative;
+    width:110vw;
+  }
+  form button {
+    padding: 15px 0;
+    font-size: inherit;
+    border-radius: 8px;
+    outline: none;
+    border: 0px;
+    color: #fff;
+    transition: .3s;
+    cursor: pointer;
+  }
+  form button:hover {
+    background-color: #1A233B;
+  }
+  form button i {
+    padding-left: 6px;
+  }
+  .btn-chat{
+    position: relative;
+    padding: 0 0;
+    width: 85px;
+    height: 50px;
+    overflow: hidden;
+    z-index: 1;
+    right:45px;
+  }
+  .btn-chat-emoji{
+    position: relative;
+    padding: 0 0;
+    width: 85px;
+    height: 50px;
+    overflow: hidden;
+    z-index: 1;
+    left:45px;
+  }
+  
+  /* styles to scroll bar */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #fff; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #1A233B; 
+    border-radius: 5px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #d0ced4; 
+  }

@@ -1,0 +1,16 @@
+div.list{
+    display: flex;
+   flex-wrap: wrap;  
+}
+.info{
+    position: relative;
+    left: 10px;
+}
+.overlay-inner{
+    background-color: #EADDA6;
+}
+
+.overlay-inner .inner-box h3{
+    margin-top: 10px;
+    color: #3C6E71;
+}

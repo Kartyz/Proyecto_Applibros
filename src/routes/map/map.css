@@ -1,0 +1,23 @@
+.mapContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    width: 100vw;
+    padding: 15vh 5vw 5vh 5vw;
+    position: absolute;
+    z-index: 0;
+  }
+  
+  gmp-map {
+    width: 80vw;
+    height: 70vh;
+  }
+  
+  @media screen and (max-width: 620px) {
+    .mapContainer {
+      width: 100vw;
+      min-height: 100vh;
+    }
+  }

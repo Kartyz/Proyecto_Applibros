@@ -1,0 +1,90 @@
+/* User Component */
+.right-side {
+    width: 105px;
+    margin-left: 5%;
+  }
+  
+  .card-user {
+    border: 1px solid #d4d3d3;
+    border-radius: 25px;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .card-user p {
+    font-weight: 500;
+  }
+  .card-user img {
+    width: 75px;
+    border-radius: 50%;
+    display: block;
+  }
+  /* Login Btn */
+  .btn-login {
+    font-size: inherit;
+    background-color: #4082ED;
+    outline: none;
+    color: #fff;
+    padding: 0 9px 0 0;
+    border: 2px solid #4082ED;
+    cursor: pointer;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .btn-login i {
+    background-color: #fff;
+    color: #4082ED;
+    padding: 5px;
+    margin-right: 8px;
+    font-size: 26px;
+  }
+  .btn-login.btn-logout {
+    width:100px; 
+    background-color: #a0a3a7;
+    border: 2px solid #a0a3a7;
+  }
+  .btn-login.btn-logout i {
+    font-size: 20px;
+    color: #a0a3a7;
+  }
+  /* Emojis */
+  .open {
+    display: block;
+    position: absolute;
+    top: 10px;
+  }
+  .close {
+    display: none;
+  }
+  button.close-emoji{
+    position: relative;
+    right: -46%;
+    top: 2px;
+    padding: 2px;
+    background-color: #ffffff00;
+  }
+  button.close-emoji:hover {
+    background-color: #2c2020ad;
+  }
+  button.close-emoji i {
+    color: #1a2d5a;
+  }
+  .btn-emoji i {
+    font-size: 24px;
+    padding-left: 0;
+  }
+  /* author */
+  p.author {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    gap: 7px;
+  }
+  p.author a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #000;
+  }
