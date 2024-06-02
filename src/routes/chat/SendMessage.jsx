@@ -1,6 +1,6 @@
 import { addDoc, collection, serverTimestamp } from "firebase/firestore";
 import { useState } from "react";
-import {auth, db} from '/Users/oriol/Desktop/applibros-main/firebase';
+//import {auth, db} from '/Users/oriol/Desktop/applibros-main/firebase';
 import Picker from "emoji-picker-react";
 import "./SendMessage.css";
 

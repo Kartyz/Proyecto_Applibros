@@ -56,9 +56,7 @@
     position: absolute;
     top: 10px;
   }
-  .close {
-    display: none;
-  }
+  
   button.close-emoji{
     position: relative;
     right: -46%;

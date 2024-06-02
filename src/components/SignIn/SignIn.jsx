@@ -1,4 +1,4 @@
-//import { auth } from '/Users/oriol/Desktop/applibros/firebase';
+import { auth } from '/Users/oriol/Desktop/applibros/firebase';
 import { GoogleAuthProvider, signInWithRedirect } from 'firebase/auth';
 import "./SignIn.css";
 

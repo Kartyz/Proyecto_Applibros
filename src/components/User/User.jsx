@@ -1,7 +1,8 @@
 import SignIn from '../SignIn/SignIn'
 import LogOut from '../SignIn/LogOut';
 import { useAuthState } from 'react-firebase-hooks/auth';
-import { auth } from '/Users/oriol/Desktop/applibros-main/firebase';
+//import { auth } from '/Users/oriol/Desktop/applibros-main/firebase';
+import { auth } from '/Users/oriol/Desktop/applibros/firebase';
 import "./User.css";
 
 const User = () => {

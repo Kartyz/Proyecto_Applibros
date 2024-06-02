@@ -1,5 +1,4 @@
-//import { auth } from '/Users/oriol/Desktop/applibros/firebase';
- 
+ import { auth } from '/Users/oriol/Desktop/applibros/firebase';
 const LogOut = () => {
     const signOut = () => {
         signOut(auth);

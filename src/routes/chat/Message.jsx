@@ -1,6 +1,8 @@
-import {auth} from '/Users/oriol/Desktop/applibros-main/firebase';
+//import {auth} from '/Users/oriol/Desktop/applibros-main/firebase';
+import {auth} from '/Users/oriol/Desktop/applibros/firebase';
 import "./message.css";
-import {formatDate} from "/Users/oriol/Desktop/applibros-main/src/components/helpers/index"
+//import {formatDate} from "/Users/oriol/Desktop/applibros-main/src/components/helpers/index.js";
+import {formatDate} from "/Users/oriol/Desktop/applibros/src/components/helpers/index";
 const Message =({ message }) => {
     let newStyles = '';
     if (auth.currentUser) {

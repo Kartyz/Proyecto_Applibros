@@ -2,19 +2,29 @@ import { useContext, useState, useEffect } from "react";
 import { dataContext } from "../Context/DataContext";
 import axios from "axios";
 import Books from "../Books/Books"; // Asegúrate de importar el componente Books
-import "./Products.css";
+import "./ProductsBackend.css";
 
-const Products = () => {
+const ProductsBackend = () => {
   const [data, setData] = useState([]);
   const [show, setShow] = useState(false);
   const [selectedBook, setSelectedBook] = useState(null);
   const { buyProducts } = useContext(dataContext);
 
   useEffect(() => {
-    axios("data.json")
-      .then((res) => setData(res.data))
+    // Llamar al backend para obtener los datos de los libros
+    axios("http://localhost:8080/library/books")
+      .then((res) => {
+        const formattedData = res.data.map((book) => ({
+          id: book.id,
+          img: book.imagenes, 
+          name: book.titulo,  
+          author: book.autor,
+          description: book.descripcion, 
+        }));
+        setData(formattedData);
+      })
       .catch((error) => {
-        console.error("Error fetching books from data.json:", error);
+        console.error("Error fetching books from backend:", error);
       });
   }, []);
 
@@ -23,6 +33,7 @@ const Products = () => {
     setShow(true);
   };
 
+  // Renderiza los productos mediante los datos
   return (
     <div className="container">
       {data.map((product) => (
@@ -42,4 +53,4 @@ const Products = () => {
   );
 };
 
-export default Products;
+export default ProductsBackend;

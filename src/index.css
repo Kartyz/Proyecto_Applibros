@@ -88,11 +88,11 @@ div.bookCard{
 }
 .overlay-inner .close{
     position: absolute;
-    top:1rem;
+    top:3rem;
     right: 1rem;
     outline: none;
     border: none;
-    font-size: 17px;
+    font-size: 20px;
     background-color: transparent;
     overflow: hidden;
 }

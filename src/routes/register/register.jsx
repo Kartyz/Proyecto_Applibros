@@ -42,7 +42,7 @@ function Register() {
       const data = await response.json();
       if (data.success) {
         toast.success("Te has registrado con éxito!");
-         navigate("/Login")
+         navigate("/")
         
       } else {
         toast.error(data.message);

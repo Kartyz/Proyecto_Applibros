@@ -1,10 +1,12 @@
 import { useState, useEffect, useRef } from "react";
 import Message from "./Message";
-import {db} from "/Users/oriol/Desktop/applibros-main/firebase";
+//import {db} from "/Users/oriol/Desktop/applibros-main/firebase";
+import {db} from "/Users/oriol/Desktop/applibros/firebase";
 import {query, collection, orderBy, onSnapshot} from 'firebase/firestore';
 import SendMessage from "./SendMessage";
 import { useAuthState } from 'react-firebase-hooks/auth';
-import { auth } from '/Users/oriol/Desktop/applibros-main/firebase';
+//import { auth } from '/Users/oriol/Desktop/applibros-main/firebase';
+import { auth } from '/Users/oriol/Desktop/applibros/firebase';
 import Footer from "../../components/footer/footer";
 import User from "../../components/User/User";
 import "./Chat.css";

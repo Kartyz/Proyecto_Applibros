@@ -1,5 +1,5 @@
 import { createRoot } from 'react-dom/client';
-import React ,{useState}from "react";
+import React ,{useState, useEffect}from "react";
 import axios from "axios";
 import "./index.css";
 import FAQ from "./routes/faq/faq";
@@ -18,7 +18,7 @@ import Chat from "./routes/chat/chat";
 import { UserProvider } from "./routes/login/UserContext";
 import DataProvider from './components/Context/DataContext';
 import Products from './components/Products/Products';
-
+import ProductsBackend from './components/Products/ProductsBackend';
 
 const root = document.getElementById("root");
 const rootInstance = createRoot(root);
@@ -26,17 +26,27 @@ const rootInstance = createRoot(root);
 const Main=()=>{
   
     const [search,setSearch]=useState("");
-    const [bookData,setData]=useState([]);
-    const searchBook=(evt)=>{
-        if(evt.key==="Enter")
-        {
-          
-            axios.get(`https://www.googleapis.com/books/v1/volumes?q=${search}&key=AIzaSyAJ i9kOLDmKoOP4TvB8qiItHlTOJDESqSg&maxResults=40`)
-            .then(res=>setData(res.data.items))
-            .catch(err=>console.log(err))
-        }
-    }
+    const [bookData,setBookData]=useState([]);
     
+    const searchBook = async (evt) => {
+      if (evt.key === "Enter") {
+          try {
+              const localBooksResponse = await axios.get(`http://localhost:8080/library/book/${search}`);
+              const localBooks =  Array.isArray(localBooksResponse.data) ? localBooksResponse.data : [];
+
+              const googleBooksResponse = await axios.get(`https://www.googleapis.com/books/v1/volumes?q=${search}&key=AIzaSyAJi9kOLDmKoOP4TvB8qiItHlTOJDESqSg&maxResults=40`);
+              const googleBooks = googleBooksResponse.data.items || [];
+
+              // Combina los resultados de ambas fuentes de datos
+              const combinedBooks = [...googleBooks, ...localBooks];
+
+              // Actualiza el estado con los resultados combinados
+              setBookData(combinedBooks);
+          } catch (err) {
+              console.log(err);
+          }
+      }
+  };
     return(
         <>
             <div className="header">
@@ -50,6 +60,7 @@ const Main=()=>{
                     
                 </div>
             </div>
+            
 
             <div className="container">
             
@@ -57,7 +68,10 @@ const Main=()=>{
                 <BookCard book={bookData}/>   
                           
               }
+              <ProductsBackend />
               <Products />
+              
+
             </div>
             
         </>
@@ -83,6 +97,7 @@ rootInstance.render(
               <Route path="chat" element={<Chat />} />
               <Route path="/cart" element={<CartContent />} />
               <Route path="Products" element={<Products />} />
+              <Route path="ProductsBackend" element={<ProductsBackend />} />
             </Route>
           </Routes>
       </Router>
